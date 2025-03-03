@@ -38,6 +38,7 @@ nav {
   gap: 20px;
   padding: 30px;
   box-shadow: 0px 7px 7px #a64d7a4d;
+  flex-wrap: wrap;
 }
 
 .link_nav {
