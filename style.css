@@ -120,7 +120,7 @@ main {
 }
 
 .sobre_mim-resumo > img {
-  width: 50%;
+  width: auto;
   max-width: 550px;
   min-width: 400px;
   height: auto;
