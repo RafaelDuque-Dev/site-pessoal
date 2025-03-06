@@ -46,7 +46,6 @@ header {
   border-bottom: 2px solid var(--cor-1);
   margin: auto;
 }
-
 nav {
   display: flex;
   text-align: center;
@@ -55,25 +54,21 @@ nav {
   padding: 20px;
   box-shadow: 0px 7px 7px var(--cor-sombra);
 }
-
 .link_nav {
   text-decoration: none;
   font-family: var(--font-links);
   font-size: clamp(0.7rem, 0.5vw, 1rem);
   color: var(--cor-branco);
 }
-
 .link_nav:hover {
   color: var(--cor-1);
 }
-
 .img_nav {
   width: auto;
   max-width: 70px;
   min-width: 10px;
   transition: transform 1s ease-in-out;
 }
-
 .img_nav:hover {
   transform: rotate(-360deg);
 }
@@ -85,7 +80,6 @@ main {
   padding: 20px 40px;
 }
 
-
 /* SOBRE MIM RESUMO*/
 .sobre_mim-resumo {
   display: flex;
@@ -96,21 +90,17 @@ main {
   max-width: 1300px;
   margin: auto;
 }
-
 .sobre_mim-div {
   height: 25%;
 }
-
 .sobre_mim-div > h1 {
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   font-family: var(--font-secundaria);
   font-weight: bolder;
 }
-
 .sobre_mim-div > h1 > strong {
   color: var(--cor-1);
 }
-
 .sobre_mim-div > p {
   font-size: clamp(1.3rem, 2.2vw,2rem);
   font-family: var(--font-secundaria);
@@ -118,12 +108,10 @@ main {
   margin-top: 8px;
   margin-bottom: 20px;
 }
-
 .sobre_mim-links {
   display: flex;
   flex-wrap: wrap;
 }
-
 .sobre_mim-links > a {
   text-decoration: none;
   color: var(--cor-branco);
@@ -135,11 +123,9 @@ main {
   margin-right: 30px;
   font-family: var(--font-secundaria);
 }
-
 .sobre_mim-links > a:hover {
   background-color: var(--cor-2);
 }
-
 .sobre_mim-resumo > img {
   width: auto;
   max-width: 450px;
