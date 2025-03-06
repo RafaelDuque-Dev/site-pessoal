@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @font-face {
   font-family: Mario;
   src: url(../fonts/Splatch.ttf) format(truetype);
@@ -11,6 +12,12 @@
   --cor-3: #3B1C32;
   --cor-4: #1A1A1D;
   --cor-5: #92929b;
+  --cor-sombra: #a64d7a4d;
+
+  --font-links: 'Mario', Times, serif;
+  --font-principal: "Nunito", sans-serif;
+  --font-secundaria: 'Courier New', Courier, monospace;
+
 }
 
 * {
@@ -22,7 +29,6 @@ body {
 background-color: var(--cor-4);
 color: var(--cor-branco);
 }
-
 
 /* HEADER */
 header {
@@ -36,15 +42,14 @@ nav {
   text-align: center;
   justify-content: center;
   gap: 20px;
-  padding: 30px;
-  box-shadow: 0px 7px 7px #a64d7a4d;
-  flex-wrap: wrap;
+  padding: 20px;
+  box-shadow: 0px 7px 7px var(--cor-sombra);
 }
 
 .link_nav {
   text-decoration: none;
-  font-family: 'Mario', Times, serif;
-  font-size: 0.8rem;
+  font-family: var(--font-links);
+  font-size: clamp(0.7rem, 0.5vw, 1rem);
   color: var(--cor-branco);
 }
 
@@ -53,7 +58,9 @@ nav {
 }
 
 .img_nav {
-  width: 80px;
+  width: auto;
+  max-width: 70px;
+  min-width: 10px;
   transition: transform 1s ease-in-out;
 }
 
@@ -69,13 +76,15 @@ main {
 }
 
 
-/* SOBRE MIM */
+/* SOBRE MIM RESUMO*/
 .sobre_mim-resumo {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 50%;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .sobre_mim-div {
@@ -83,8 +92,8 @@ main {
 }
 
 .sobre_mim-div > h1 {
-  font-size: 2.2em;
-  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  font-family: var(--font-secundaria);
   font-weight: bolder;
 }
 
@@ -93,9 +102,10 @@ main {
 }
 
 .sobre_mim-div > p {
-  font-size: 2em;
-  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(1.3rem, 2.2vw,2rem);
+  font-family: var(--font-secundaria);
   color: var(--cor-5);
+  margin-top: 8px;
   margin-bottom: 20px;
 }
 
@@ -113,6 +123,7 @@ main {
   padding: 10px;
   margin-top: 10px;
   margin-right: 30px;
+  font-family: var(--font-secundaria);
 }
 
 .sobre_mim-links > a:hover {
@@ -121,8 +132,8 @@ main {
 
 .sobre_mim-resumo > img {
   width: auto;
-  max-width: 550px;
-  min-width: 400px;
+  max-width: 450px;
+  min-width: 250px;
   height: auto;
   transition: transform 0.3s ease;
 }
@@ -131,3 +142,27 @@ main {
 }
 
 
+/* SOBRE MIM */
+
+.sobre_mim {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-family: var(--font-principal);
+  max-width: 1000px;
+  margin: auto;
+}
+
+.sobre_mim > h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.sobre_mim > p {
+  font-size: 1.3em;
+  color: var(--cor-5);
+  text-align: center;
+}
