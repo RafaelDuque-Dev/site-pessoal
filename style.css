@@ -20,6 +20,8 @@
 
 }
 
+/* GERAL */
+
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +30,14 @@
 body {
 background-color: var(--cor-4);
 color: var(--cor-branco);
+font-family: var(--font-principal);
+}
+
+.titulos_potfolio {
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 40px;
+  text-align: center;
 }
 
 /* HEADER */
@@ -143,22 +153,15 @@ main {
 
 
 /* SOBRE MIM */
-
 .sobre_mim {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   font-family: var(--font-principal);
   max-width: 1000px;
   margin: auto;
-}
-
-.sobre_mim > h1 {
-  font-size: 2em;
-  font-weight: 700;
-  margin-top: 20px;
 }
 
 .sobre_mim > p {
