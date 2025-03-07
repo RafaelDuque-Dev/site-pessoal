@@ -133,6 +133,9 @@ main {
   height: auto;
   transition: transform 0.3s ease;
 }
+.link-contato{
+  background-color: var(--cor-);
+}
 .sobre_mim-resumo > img:hover {
   transform: scale(1.1);
 }
