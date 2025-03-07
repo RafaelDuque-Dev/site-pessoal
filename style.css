@@ -7,12 +7,12 @@
 
 :root {
   --cor-branco: #ffffff;
-  --cor-1: #d4639c;
-  --cor-2: #6A1E55;
-  --cor-3: #3B1C32;
-  --cor-4: #1A1A1D;
+  --cor-1: #63d4a5;
+  --cor-2: #1e6a5d;
+  --cor-3: #1c3b32;
+  --cor-4: #1a1d1b;
   --cor-5: #92929b;
-  --cor-sombra: #a64d7a4d;
+  --cor-sombra: #4da68b4d;
 
   --font-links: 'Mario', Times, serif;
   --font-principal: "Nunito", sans-serif;
