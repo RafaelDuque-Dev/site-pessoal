@@ -157,4 +157,38 @@ main {
   font-size: 1.3em;
   color: var(--cor-5);
   text-align: center;
+  margin-bottom: 30px;
+}
+
+.container-habilidades {
+  display: flex;
+  justify-content: center;
+  max-width: 1300px;
+  margin: auto;
+  padding: 30px;
+  gap: 20px
+}
+
+.container-habilidade {
+  text-align: center;
+  color: var(--cor-1);
+  background-color: var(--cor-3);
+  padding: 15px;
+  border-radius: 40px 0 0 0;
+  border-bottom: 4px solid var(--cor-1);
+  width: 110px;
+}
+
+.container-habilidade:hover {
+  transform: scale(1.1);
+}
+
+.container-habilidade > img{
+  width: 60px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.container-projeto > a > img {
+  width: 500px;
 }
