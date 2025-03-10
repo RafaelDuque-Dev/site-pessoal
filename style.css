@@ -202,7 +202,7 @@ main {
   height: 350px;
   text-align: center;
   border: 3px solid var(--cor-1);
-  border-radius: 30px;
+  border-radius: 30px 0 30px 0px;
 }
 
 .container-projeto:hover {
