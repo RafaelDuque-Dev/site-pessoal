@@ -189,6 +189,38 @@ main {
   padding-top: 20px;
 }
 
+.projetos {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.container-projeto {
+  margin-top: 30px;
+  background-color: var(--cor-3);
+  width: 420px;
+  height: 350px;
+  text-align: center;
+  border: 3px solid var(--cor-1);
+  border-radius: 30px;
+}
+
+.container-projeto:hover {
+  transform: scale(1.1);
+  background-color: var(--cor-1);
+}
+
+.container-projeto-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.container-projeto-cabecalho > img {
+  width: 40px;
+}
+
 .container-projeto > a > img {
-  width: 500px;
+  width: 400px;
 }
