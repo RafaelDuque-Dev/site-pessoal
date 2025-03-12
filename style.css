@@ -17,7 +17,6 @@
   --font-links: 'Mario', Times, serif;
   --font-principal: "Nunito", sans-serif;
   --font-secundaria: 'Courier New', Courier, monospace;
-
 }
 
 /* GERAL */
@@ -33,20 +32,13 @@ color: var(--cor-branco);
 font-family: var(--font-principal);
 }
 
-.titulos_potfolio {
-  font-size: 2em;
-  font-weight: 700;
-  margin-top: 40px;
-  text-align: center;
-}
-
 /* HEADER */
-header {
+.cabecalho {
   background-image: linear-gradient(to bottom, var(--cor-3), var(--cor-4));
   border-bottom: 2px solid var(--cor-1);
   margin: auto;
 }
-nav {
+.cabecalho__nav {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -54,22 +46,22 @@ nav {
   padding: 20px;
   box-shadow: 0px 7px 7px var(--cor-sombra);
 }
-.link_nav {
+.cabecalho__link {
   text-decoration: none;
   font-family: var(--font-links);
   font-size: clamp(0.7rem, 0.5vw, 1rem);
   color: var(--cor-branco);
 }
-.link_nav:hover {
+.cabecalho__link:hover {
   color: var(--cor-1);
 }
-.img_nav {
+.cabecalho__link__img {
   width: auto;
   max-width: 70px;
   min-width: 10px;
   transition: transform 1s ease-in-out;
 }
-.img_nav:hover {
+.cabecalho__link__img:hover {
   transform: rotate(-360deg);
 }
 
@@ -78,6 +70,13 @@ main {
   max-width: 2000px;
   margin: auto;
   padding: 20px 40px;
+}
+
+.titulos_potfolio {
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 40px;
+  text-align: center;
 }
 
 /* SOBRE MIM RESUMO*/
