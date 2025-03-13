@@ -38,6 +38,7 @@ font-family: var(--font-principal);
   border-bottom: 2px solid var(--cor-1);
   margin: auto;
 }
+
 .cabecalho__nav {
   display: flex;
   text-align: center;
@@ -46,41 +47,46 @@ font-family: var(--font-principal);
   padding: 20px;
   box-shadow: 0px 7px 7px var(--cor-sombra);
 }
+
 .cabecalho__link {
   text-decoration: none;
   font-family: var(--font-links);
   font-size: clamp(0.7rem, 0.5vw, 1rem);
   color: var(--cor-branco);
 }
+
 .cabecalho__link:hover {
   color: var(--cor-1);
 }
+
 .cabecalho__link__img {
   width: auto;
   max-width: 70px;
   min-width: 10px;
   transition: transform 1s ease-in-out;
 }
+
 .cabecalho__link__img:hover {
   transform: rotate(-360deg);
 }
 
 /* MAIN */
-main {
+
+.conteudo {
   max-width: 2000px;
   margin: auto;
   padding: 20px 40px;
 }
 
-.titulos_potfolio {
+.conteudo__titulo {
   font-size: 2em;
   font-weight: 700;
   margin-top: 40px;
   text-align: center;
 }
 
-/* SOBRE MIM RESUMO*/
-.sobre_mim-resumo {
+/*APRESENTAÇÃO*/
+.conteudo__apresentacao {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -89,17 +95,21 @@ main {
   max-width: 1300px;
   margin: auto;
 }
-.sobre_mim-div {
+
+.conteudo__apresentacao__div {
   height: 25%;
 }
-.sobre_mim-div > h1 {
+
+.conteudo__apresentacao__titulo {
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   font-family: var(--font-secundaria);
   font-weight: bolder;
 }
-.sobre_mim-div > h1 > strong {
+
+.conteudo__apresentacao__titulo-destaque {
   color: var(--cor-1);
 }
+
 .sobre_mim-div > p {
   font-size: clamp(1.3rem, 2.2vw,2rem);
   font-family: var(--font-secundaria);
@@ -107,11 +117,13 @@ main {
   margin-top: 8px;
   margin-bottom: 20px;
 }
-.sobre_mim-links {
+
+.conteudo__apresentacao__links {
   display: flex;
   flex-wrap: wrap;
 }
-.sobre_mim-links > a {
+
+.conteudo__apresentacao__links__link {
   text-decoration: none;
   color: var(--cor-branco);
   font-size: 1.2em;
@@ -122,26 +134,26 @@ main {
   margin-right: 30px;
   font-family: var(--font-secundaria);
 }
-.sobre_mim-links > a:hover {
+
+.conteudo__apresentacao__links__link:hover {
   background-color: var(--cor-2);
 }
-.sobre_mim-resumo > img {
+
+.conteudo__apresentacao__imagem {
   width: auto;
   max-width: 450px;
   min-width: 250px;
   height: auto;
   transition: transform 0.3s ease;
 }
-.link-contato{
-  background-color: var(--cor-);
-}
-.sobre_mim-resumo > img:hover {
+
+.conteudo__apresentacao__imagem:hover {
   transform: scale(1.1);
 }
 
 
 /* SOBRE MIM */
-.sobre_mim {
+.conteudo__sobre-mim {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -152,14 +164,14 @@ main {
   margin: auto;
 }
 
-.sobre_mim > p {
+.conteudo__sobre-mim__descricao {
   font-size: 1.3em;
   color: var(--cor-5);
   text-align: center;
   margin-bottom: 30px;
 }
 
-.container-habilidades {
+.conteudo__habilidades__div {
   display: flex;
   justify-content: center;
   max-width: 1300px;
@@ -168,7 +180,7 @@ main {
   gap: 20px
 }
 
-.container-habilidade {
+.conteudo__habilidades__habilidade {
   text-align: center;
   color: var(--cor-1);
   background-color: var(--cor-3);
@@ -178,11 +190,11 @@ main {
   width: 110px;
 }
 
-.container-habilidade:hover {
+.conteudo__habilidades__habilidade:hover {
   transform: scale(1.1);
 }
 
-.container-habilidade > img{
+.conteudo__habilidades__habilidade__imagem{
   width: 60px;
   margin: auto;
   padding-top: 20px;
