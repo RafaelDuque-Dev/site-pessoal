@@ -143,7 +143,7 @@ font-family: var(--font-principal);
 .conteudo__apresentacao__imagem {
   width: auto;
   max-width: 450px;
-  min-width: 250px;
+  min-width: 200px;
   height: auto;
   transition: transform 0.3s ease;
 }
