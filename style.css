@@ -26,6 +26,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 background-color: var(--cor-4);
 color: var(--cor-branco);
@@ -116,7 +120,7 @@ font-family: var(--font-principal);
   font-family: var(--font-secundaria);
   color: var(--cor-5);
   margin-top: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 }
 
 .conteudo__apresentacao__links {
@@ -169,11 +173,11 @@ font-family: var(--font-principal);
   font-size: 1.3em;
   color: var(--cor-5);
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .conteudo__habilidades {
-  margin: 100px auto;
+  margin: 10px auto;
+  padding-top:50px;
 }
 
 .conteudo__habilidades__div {
@@ -206,6 +210,10 @@ font-family: var(--font-principal);
   padding-top: 20px;
 }
 
+.conteudo__projetos {
+  margin: 10px auto;
+  padding-top:50px;
+}
 
 .conteudo__projetos__div {
   display: flex;
@@ -247,7 +255,8 @@ font-family: var(--font-principal);
 }
 
 .conteudo__contatos {
-  margin: 100px auto;
+  margin: 10px auto;
+  padding-top:50px;
 }
 
 .conteudo__contatos__div {
