@@ -227,7 +227,7 @@ font-family: var(--font-principal);
 
 .conteudo__projetos__projeto {
   background-color: var(--cor-3);
-  max-width: 350px;
+  max-width: 500px;
   min-width: 200px;
   text-align: center;
   border: 3px solid var(--cor-1);
