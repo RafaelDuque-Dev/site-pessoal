@@ -111,6 +111,16 @@ font-family: var(--font-principal);
   font-weight: bolder;
 }
 
+.conteudo__apresentacao__titulo::after {
+  content: '|';
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 .conteudo__apresentacao__titulo-destaque {
   color: var(--cor-1);
 }
