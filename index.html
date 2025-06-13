@@ -5,11 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio // Rafael Duque</title>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="cabecalho">
-    <nav class="cabecalho__nav">
+
+    <div id="menu-mobile">
+      <h1 class="titulo_menu">&lt;Portfólio&gt;</h1>
+      <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+      <menu id="menu" class="cabecalho__menu">
+        <ul>
+          <li class="cabecalho__menu__item">
+            <a href="#sobre-mim" class="cabecalho__link">&lt;Sobre Mim&gt;</a>
+          </li>
+          <li class="cabecalho__menu__item">
+            <a href="#habilidades" class="cabecalho__link">&lt;Habilidades&gt;</a>
+          </li>
+          <li class="cabecalho__menu__item">
+            <a href="#projetos" class="cabecalho__link">&lt;Projetos&gt;</a>
+          </li>
+          <li class="cabecalho__menu__item">
+            <a href="#contato" class="cabecalho__link">&lt;Contato&gt;</a>
+          </li>
+        </ul>
+      </menu>
+    </div>
+
+    <nav class="cabecalho__nav" id="menu-desktop">
       <a href="#sobre-mim" class="cabecalho__link">
         <img class="cabecalho__link__img" src="img/sobre.png" alt="Marter Chief">
         <p>&lt;Sobre Mim&gt;</p>

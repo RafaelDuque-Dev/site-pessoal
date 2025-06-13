@@ -26,4 +26,24 @@ function digitarDestaque() {
   }
 }
 
+function clickMenu() {
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+    burguer.textContent = "menu";
+  } else {
+    menu.style.display = "block";
+    burguer.textContent = "close";
+  }
+}
+
+function mudouTamanho() {
+  if (window.innerWidth > 800) {
+    menu.style.display = "block";
+    burguer.textContent = "close";
+  } else {
+    menu.style.display = "none";
+    burguer.textContent = "menu";
+  }
+}
+
 digitarTexto();
