@@ -324,47 +324,120 @@ font-family: var(--font-principal);
 
 
 @media (max-width: 600px) {
-  .cabecalho{
-    width: 100%;
-  }
-  #menu-mobile {
-    display: block;
-    text-align: center;
-  }
+  body {
+  padding-top: 80px;
+}
+
   #menu-desktop {
     display: none;
   }
-
-  .titulo_menu {
-    font-family: var(--font-links);
-    font-size: 1rem;
-    color: var(--cor-branco);
-    text-align: center;
-    margin-bottom: 10px;
-    padding: 5px;
-    letter-spacing: 2px;
-  }
-
-  #burguer{
-  font-size: 2rem;
-  color: var(--cor-branco);
-  cursor: pointer;
-  margin-right: 20px;
-  }
-
-  #menu {
-    display: none;
-  }
-  .cabecalho__link {
+  #menu-mobile {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin: 10px 0;
-    font-size: 0.8rem;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, var(--cor-3), var(--cor-4));
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    border-bottom: 2px solid var(--cor-1);
+  }
+
+  #burguer {
+    position: absolute;
+    left: 20px; /* Distância da esquerda */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    color: var(--cor-branco);
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  #burguer:hover {
+    color: var(--cor-1);
+
+  }
+
+  .cabecalho__logo__titulo {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--font-principal);
+  } 
+
+ #menu {
+  position: fixed;
+  top: 0;
+  left: -80vw; /* Esconde o menu à esquerda */
+  width: 80vw;
+  height: 100vh;
+  background: var(--cor-4);
+  box-shadow: 2px 0 10px rgba(0,0,0,0.7);
+  transition: left 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+  #menu.ativo {
+    left: 0; /* Mostra o menu */
+  }
+
+  #menu h2 {
+    font-family: var(--font-principal);
+    font-size: 2rem;
+    color: var(--cor-1);
+    margin-top: 50px;
+  }
+
+  #menu ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  #menu li {
+    margin: 40px 0;
   }
 
 
 
+  #menu .cabecalho__link {
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    color: var(--cor-branco);
+    text-decoration: none;
+    font-family: var(--font-links);
+  }
+
+  #menu .cabecalho__link:hover {
+    color: var(--cor-1);
+
+  }
+
+  .cabecalho__menu__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    transition: transform 0.2s;
+  }
+
+  .cabecalho__menu__item:hover {
+    transform: scale(1.1);
+  }
+
+  #sobre-mim,
+  #habilidades,
+  #projetos,
+  #contato {
+    scroll-margin-top: 100px;
+  }
 
 }
-

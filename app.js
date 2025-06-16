@@ -1,3 +1,7 @@
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+
 const texto = "🤖 Olá, eu sou ";
 const destaque = "Rafael Duque!";
 const h1 = document.querySelector('.conteudo__apresentacao__titulo');
@@ -27,14 +31,31 @@ function digitarDestaque() {
 }
 
 function clickMenu() {
-  if (menu.style.display === "block") {
-    menu.style.display = "none";
-    burguer.textContent = "menu";
-  } else {
-    menu.style.display = "block";
-    burguer.textContent = "close";
-  }
+  const menu = document.getElementById('menu');
+  menu.classList.toggle('ativo');
 }
+
+document.addEventListener('click', function(event) {
+  const menu = document.getElementById('menu');
+  const burguer = document.getElementById('burguer');
+  if (
+    menu.classList.contains('ativo') &&
+    !menu.contains(event.target) &&
+    event.target !== burguer
+  ) {
+    menu.classList.remove('ativo');
+  }
+});
+
+document.getElementById('fechar-menu').onclick = function() {
+  document.getElementById('menu').classList.remove('ativo');
+};
+
+document.querySelectorAll('#menu .cabecalho__link').forEach(link => {
+  link.addEventListener('click', function() {
+    document.getElementById('menu').classList.remove('ativo');
+  });
+});
 
 function mudouTamanho() {
   if (window.innerWidth > 800) {
