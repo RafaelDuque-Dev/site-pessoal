@@ -343,6 +343,7 @@ font-family: var(--font-principal);
     height: 80px;
     z-index: 1000;
     border-bottom: 2px solid var(--cor-1);
+    box-shadow: 0px 7px 7px var(--cor-sombra);
   }
 
   #burguer {
@@ -371,8 +372,8 @@ font-family: var(--font-principal);
  #menu {
   position: fixed;
   top: 0;
-  left: -80vw; /* Esconde o menu à esquerda */
-  width: 80vw;
+  left: -60vw; /* Esconde o menu à esquerda */
+  width: 60vw;
   height: 100vh;
   background: var(--cor-4);
   box-shadow: 2px 0 10px rgba(0,0,0,0.7);
@@ -382,6 +383,16 @@ font-family: var(--font-principal);
   align-items: center;
   flex-direction: column; }
 
+  #fechar-menu {
+    font-size: 2.5rem;
+    color: var(--cor-branco);
+    cursor: pointer;
+  }
+  #fechar-menu:hover {
+    color: var(--cor-1);
+    text-shadow: 2px 2px 4px var(--cor-sombra);
+  }
+
   #menu.ativo {
     left: 0; /* Mostra o menu */
   }
@@ -390,7 +401,7 @@ font-family: var(--font-principal);
     font-family: var(--font-principal);
     font-size: 2rem;
     color: var(--cor-1);
-    margin-top: 50px;
+    margin-top: 80px;
   }
 
   #menu ul {
@@ -405,14 +416,14 @@ font-family: var(--font-principal);
     margin: 40px 0;
   }
 
-
-
   #menu .cabecalho__link {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     letter-spacing: 0.2em;
     color: var(--cor-branco);
     text-decoration: none;
     font-family: var(--font-links);
+    margin: 0 0;
+    
   }
 
   #menu .cabecalho__link:hover {
@@ -439,5 +450,41 @@ font-family: var(--font-principal);
   #contato {
     scroll-margin-top: 100px;
   }
+
+  .conteudo__apresentacao__div {
+    height: auto;
+    width: 100%;
+    min-width: 220px;
+  }
+
+  .conteudo__apresentacao__imagem {
+    width: auto;
+    max-width: 200px;
+    min-width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .conteudo__apresentacao__links__link {
+    font-size: 1.1em;
+    padding: 8px;
+    margin-right: 10px;
+  }
+
+  .conteudo__habilidades__habilidade {
+  padding: 12px;
+  width: 70px; 
+  height: auto;
+  }
+
+  .conteudo__habilidades__habilidade > h3 {
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  .conteudo__habilidades__habilidade__imagem{
+  width: 50px;
+  margin: auto;
+  padding-top: 10px;
+}
 
 }
